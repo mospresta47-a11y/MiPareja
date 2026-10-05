@@ -16,13 +16,12 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 22
-          cache: npm
 
       - name: Instalar dependencias
-        run: npm install
+        run: npm install --no-package-lock
 
       - name: Instalar EAS CLI
-        run: npm install -g eas-cli
+        run: npm install --global eas-cli
 
       - name: Crear APK
         run: eas build --platform android --profile preview --non-interactive
