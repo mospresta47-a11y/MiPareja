@@ -1,0 +1,52 @@
+{
+  "expo": {
+    "name": "Mi Pareja",
+    "slug": "mi-pareja",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "light",
+    "scheme": "mi-pareja",
+    "plugins": [
+      "expo-notifications",
+      [
+        "expo-location",
+        {
+          "locationWhenInUsePermission": "Mi Pareja necesita tu ubicación para compartirla con tu pareja.",
+          "locationAlwaysAndWhenInUsePermission": "Mi Pareja necesita tu ubicación para compartirla con tu pareja incluso en segundo plano.",
+          "isIosBackgroundLocationEnabled": true,
+          "isAndroidBackgroundLocationEnabled": true
+        }
+      ],
+      "react-native-health-connect",
+      [
+        "expo-build-properties",
+        {
+          "android": {
+            "compileSdkVersion": 36,
+            "targetSdkVersion": 36,
+            "minSdkVersion": 26
+          }
+        }
+      ],
+      [
+        "react-native-health",
+        {
+          "healthSharePermission": "Mi Pareja puede leer tus pasos para mostrarlos en Bienestar.",
+          "healthUpdatePermission": false
+        }
+      ]
+    ],
+    "android": {
+      "permissions": [
+        "ACCESS_COARSE_LOCATION",
+        "ACCESS_FINE_LOCATION",
+        "ACCESS_BACKGROUND_LOCATION"
+      ],
+      "package": "com.mipareja.app"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.mipareja.app"
+    }
+  }
+}

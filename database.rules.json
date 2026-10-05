@@ -1,0 +1,14 @@
+{
+  "rules": {
+    "couples": {
+      "$coupleId": {
+        "locations": {
+          "$uid": {
+            ".read": "auth != null && root.child('couples').child($coupleId).child('members').child(auth.uid).val() === true",
+            ".write": "auth != null && auth.uid === $uid && root.child('couples').child($coupleId).child('members').child(auth.uid).val() === true"
+          }
+        }
+      }
+    }
+  }
+}

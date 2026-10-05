@@ -1,0 +1,24 @@
+{
+  "name": "mi-pareja",
+  "version": "3.0.0",
+  "private": true,
+  "main": "node_modules/expo/AppEntry.js",
+  "scripts": {"start":"expo start","android":"expo run:android","ios":"expo run:ios","prebuild":"expo prebuild --clean"},
+  "dependencies": {
+    "@react-native-async-storage/async-storage":"2.2.0",
+    "expo":"~57.0.0",
+    "expo-build-properties":"latest",
+    "expo-constants":"~19.0.0",
+    "expo-image-picker":"~17.0.0",
+    "expo-location":"~57.0.0",
+    "expo-notifications":"~0.31.0",
+    "expo-task-manager":"~14.0.0",
+    "firebase":"^12.0.0",
+    "react":"19.2.3",
+    "react-native":"0.86.0",
+    "react-native-health":"1.19.0",
+    "react-native-health-connect":"4.1.3",
+    "react-native-maps":"1.20.1"
+  },
+  "devDependencies": {"expo-dev-client":"~57.0.19"}
+}
