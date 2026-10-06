@@ -20,6 +20,9 @@ jobs:
       - name: Instalar dependencias
         run: npm install --no-package-lock
 
+      - name: Instalar expo-notifications
+        run: npx expo install expo-notifications
+
       - name: Instalar EAS CLI
         run: npm install --global eas-cli
 
